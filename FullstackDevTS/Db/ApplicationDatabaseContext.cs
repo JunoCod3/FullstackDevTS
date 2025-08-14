@@ -16,4 +16,5 @@ public class ApplicationDatabaseContext : IdentityDbContext<JwtIdentity>
     
     //Models Registration....
     public DbSet<TestModel> TestModels { get; set; }
+    public DbSet<CategoryModel> CategoryModels { get; set; }
 }

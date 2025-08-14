@@ -3,6 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace FullstackDevTS.Models.Entities;
 
+[Table("Category")]
 public class CategoryModel
 {
     [Key]
@@ -16,5 +17,5 @@ public class CategoryModel
     [MaxLength(250)]
     public string? Description { get; set; }
     
-    public DateTime DateTime { get; set; } = DateTime.UtcNow;
+    public DateTime CreatedDate  { get; set; } = DateTime.UtcNow;
 }

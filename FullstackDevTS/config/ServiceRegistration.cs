@@ -40,6 +40,12 @@ public class ServiceRegistration
         services.AddScoped<ITestService, TestService>();
         services.AddScoped<TestDataCommandHandler>();
         services.AddMediatR(typeof(TestDataCommandHandler).Assembly);
+        
+        services.AddScoped(typeof(ICategoryRepository<CategoryModel>),typeof(CategoryRepository));
+        services.AddScoped(typeof(ICategoryService<CategoryModel>),typeof(CategoryService));
+        
+        services.AddMediatR(typeof(CreateCategoryCommandHandler).Assembly);
+        services.AddMediatR(typeof(GetAllCategoriesQueryHandler).Assembly);
 
     }
 
