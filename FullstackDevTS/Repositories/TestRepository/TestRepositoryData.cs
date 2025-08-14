@@ -1,5 +1,5 @@
 ﻿using FullstackDevTS.Db;
-using FullstackDevTS.models;
+using FullstackDevTS.Models.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace FullstackDevTS.Repositories.TestRepository;

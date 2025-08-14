@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 
 
-namespace FullstackDevTS.models;
+namespace FullstackDevTS.Models.Entities;
 
 [Table("fs_test")]
 public class TestModel

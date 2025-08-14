@@ -1,4 +1,4 @@
-﻿using FullstackDevTS.models;
+﻿using FullstackDevTS.Models.Entities;
 using FullstackDevTS.Repositories;
 
 namespace FullstackDevTS.Services.Implementation;

@@ -1,5 +1,5 @@
 ﻿using FullstackDevTS.Commands.Response;
-using FullstackDevTS.models;
+using FullstackDevTS.Models.Entities;
 
 namespace FullstackDevTS.Services;
 

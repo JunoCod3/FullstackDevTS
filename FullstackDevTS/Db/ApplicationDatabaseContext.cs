@@ -1,7 +1,7 @@
-﻿using FullstackDevTS.models;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using FullstackDevTS.Jwt;
+using FullstackDevTS.Models.Entities;
 
 namespace FullstackDevTS.Db;
 

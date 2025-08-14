@@ -149,3 +149,4 @@ C:\Users\ADMING\RiderProjects\FullstackDevTS\FullstackDevTS\bin\Debug\net8.0\Swa
 C:\Users\ADMING\RiderProjects\FullstackDevTS\FullstackDevTS\obj\Debug\net8.0\FullstackDevTS.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\ADMING\RiderProjects\FullstackDevTS\FullstackDevTS\bin\Debug\net8.0\MediatR.dll
 C:\Users\ADMING\RiderProjects\FullstackDevTS\FullstackDevTS\bin\Debug\net8.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\ADMING\RiderProjects\FullstackDevTS\FullstackDevTS\obj\Debug\net8.0\FullstackDevTS.sourcelink.json

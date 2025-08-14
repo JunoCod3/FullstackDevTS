@@ -1,6 +1,6 @@
 ﻿using FullstackDevTS.Commands.Handler;
 using FullstackDevTS.Db;
-using FullstackDevTS.models;
+using FullstackDevTS.Models.Entities;
 using FullstackDevTS.Repositories;
 using FullstackDevTS.Repositories.TestRepository;
 using FullstackDevTS.Services;
