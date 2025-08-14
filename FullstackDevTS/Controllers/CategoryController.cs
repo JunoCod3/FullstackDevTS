@@ -42,8 +42,8 @@ public class CategoryController : ControllerBase
         //using MediaTR
         var result = await _mediator.Send(category);
 
-        if (result.StatusCode == 200)
-            return Ok(result);
+        if (result.StatusCode == 201)
+            return Created("",result);
         else
             return BadRequest(result);
         

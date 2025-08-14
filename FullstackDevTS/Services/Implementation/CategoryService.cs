@@ -22,7 +22,7 @@ public class CategoryService : ICategoryService<CategoryModel>
         var response = new ResponseDto<List<CategoryModel?>>();
 
 
-        response.StatusCode = 201;
+        response.StatusCode = 200;
         response.Message = "Success";
         response.Data = categories;
       
