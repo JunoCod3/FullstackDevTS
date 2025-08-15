@@ -5,7 +5,7 @@ using MediatR;
 
 namespace FullstackDevTS.Commands.Dto;
 
-public class CategoryDataDto : IRequest<ResponseDto<CategoryModel>>
+public class CategoryDataDto : IRequest<ResponseDto<CategoryModel?>>
 {
     [MaxLength(100)]
     [Required]

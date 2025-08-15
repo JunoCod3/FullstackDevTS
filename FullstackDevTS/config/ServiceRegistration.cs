@@ -38,14 +38,16 @@ public class ServiceRegistration
         services.AddEndpointsApiExplorer();
         services.AddScoped(typeof(IRepository<TestModel>),typeof(TestRepositoryData));
         services.AddScoped<ITestService, TestService>();
-        services.AddScoped<TestDataCommandHandler>();
-        services.AddMediatR(typeof(TestDataCommandHandler).Assembly);
         
         services.AddScoped(typeof(ICategoryRepository<CategoryModel>),typeof(CategoryRepository));
         services.AddScoped(typeof(ICategoryService<CategoryModel>),typeof(CategoryService));
         
-        services.AddMediatR(typeof(CreateCategoryCommandHandler).Assembly);
-        services.AddMediatR(typeof(GetAllCategoriesQueryHandler).Assembly);
+        services.AddMediatR(typeof(Program).Assembly);
+
+        // services.AddScoped<TestDataCommandHandler>();
+        // services.AddMediatR(typeof(TestDataCommandHandler).Assembly); 
+        // services.AddMediatR(typeof(CreateCategoryCommandHandler).Assembly);
+        // services.AddMediatR(typeof(GetAllCategoriesQueryHandler).Assembly);
 
     }
 

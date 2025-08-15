@@ -19,4 +19,5 @@ public class GetAllCategoriesQueryHandler : IRequestHandler<GetAllCategoriesQuer
     {
          return await _categoryService.GetAllCategoriesAsync();
     }
+    
 }

@@ -6,8 +6,7 @@ namespace FullstackDevTS.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
-//public class TestDataController : Controller // Contoller (for ASP.NET MVC -> Model, View and Controller)
-public class TestDataController : ControllerBase // ControllerBase (for Web API )
+public class TestDataController : ControllerBase 
 {
     
     private readonly ITestService _service;

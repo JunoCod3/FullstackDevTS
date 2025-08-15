@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace FullstackDevTS.Commands.Handler;
 
-public class CreateCategoryCommandHandler : IRequestHandler<CategoryDataDto, ResponseDto<CategoryModel>>
+public class CreateCategoryCommandHandler : IRequestHandler<CategoryDataDto, ResponseDto<CategoryModel?>>
 {
     
     private readonly ICategoryService<CategoryModel> _service;
@@ -16,10 +16,10 @@ public class CreateCategoryCommandHandler : IRequestHandler<CategoryDataDto, Res
     {
         _service = service;
     }
-
-    public async Task<ResponseDto<CategoryModel>> Handle(CategoryDataDto request, CancellationToken cancellationToken)
+    
+    public async Task<ResponseDto<CategoryModel?>> Handle(CategoryDataDto request, CancellationToken cancellationToken)
     {
         return await _service.AddNewCategoryAsync(request);
-
     }   
+    
 }

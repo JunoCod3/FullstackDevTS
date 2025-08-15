@@ -19,14 +19,13 @@ public class CategoryService : ICategoryService<CategoryModel>
     {
         var categories = (await _categoryRepository.GetAllAsync()).ToList();
 
-        var response = new ResponseDto<List<CategoryModel?>>();
+        var response = new ResponseDto<List<CategoryModel?>>
+        {
+            StatusCode = 200,
+            Message = "Success",
+            Data = categories
+        };
 
-
-        response.StatusCode = 200;
-        response.Message = "Success";
-        response.Data = categories;
-      
-        
         return response;
         
     }
@@ -37,14 +36,7 @@ public class CategoryService : ICategoryService<CategoryModel>
         
         var isCategoryNameUsed = await _categoryRepository.ExistsByNameAsync(dto.Name);
         
-        if (isCategoryNameUsed)
-        {
-            response.StatusCode = 400;
-            response.Message = "Category Name already exists";
-            response.Data = null;
-            
-            return response;
-        }
+        if (isCategoryNameUsed) throw new Exception("Category name already exists");
         
         var category = new CategoryModel
         {

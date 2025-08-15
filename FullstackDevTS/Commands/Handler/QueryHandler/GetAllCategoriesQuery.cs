@@ -5,7 +5,7 @@ using MediatR;
 
 namespace FullstackDevTS.Commands.Handler.QueryHandler;
 
-public class GetAllCategoriesQuery : IRequest<ResponseDto<List<CategoryModel>>>
+public class GetAllCategoriesQuery : IRequest<ResponseDto<List<CategoryModel?>>>
 {
     
 }
